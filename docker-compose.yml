@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pdf-password-remover:
+    build:
+      context: .
+    volumes:
+      - /Users/mossad/Desktop:/app/pdf_files/
+    environment:
+      - PDF_PASSWORD=346158017
