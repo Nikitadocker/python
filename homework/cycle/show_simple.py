@@ -14,30 +14,16 @@
 #     return x + y
 
 
-start_interval = 2
+startd = 2
 
-finish_interval = 10
+finishd = 10
 
+for currentnumber  in  (currentnumber == startd, currentnumber <= finishd , current_number += 1):
 
+    for  deletel in (deletel == startd, deletel <= finishd , deletel += 1):
 
-if current_number / delitel == 0
+        if currentnumber / deletel == 0:
+            continue
+        else:
 
-
-
-
-# start_d
-
-
-# def check_simple(delimoe,  delitel):
-#     return delimoe / delitel ==
-
-
-# interval = 10
-
-# n = 1
-# while n > 1:
-#     n += 1
-
-
-порешать математику:
-    
+        print(current_number)
