@@ -14,16 +14,20 @@
 #     return x + y
 
 
-startd = 2
+import math # импортирую библиотеку что бы использовать мат функции
+# math.sqrt вернуть корень числа
 
-finishd = 10
+stard = 2 # определяю начало диапозона
+finishd = 10 # определяю конец диапозона
+currentnumber = stard
 
-for currentnumber  in  (currentnumber => startd, currentnumber <= finishd , current_number += 1):
+delitel = stard
 
-    for  deletel in (deletel => startd, deletel <= finishd , deletel += 1):
-
-        if currentnumber / deletel == 0:
+while currentnumber >= stard and currentnumber <= finishd:
+    currentnumber = currentnumber + 1
+    while delitel >= stard and delitel <= math.sqrt(currentnumber):
+        delitel = delitel + 1
+    if currentnumber % delitel == 0:
             continue
-        else:
-
-        print(current_number)
+            
+    print(currentnumber)
