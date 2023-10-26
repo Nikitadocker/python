@@ -18,9 +18,9 @@ startd = 2
 
 finishd = 10
 
-for currentnumber  in  (currentnumber == startd, currentnumber <= finishd , current_number += 1):
+for currentnumber  in  (currentnumber => startd, currentnumber <= finishd , current_number += 1):
 
-    for  deletel in (deletel == startd, deletel <= finishd , deletel += 1):
+    for  deletel in (deletel => startd, deletel <= finishd , deletel += 1):
 
         if currentnumber / deletel == 0:
             continue
