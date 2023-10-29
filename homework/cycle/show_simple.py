@@ -22,13 +22,20 @@ import math # импортирую библиотеку что бы исполь
 stard = 2 # определяю начало диапозона
 finishd = 10 # определяю конец диапозона
 currentnumber = stard # определяю что делимое из цикла будет равно началу диапозона
-delitel = stard # определяю что делитель из цикла будет равно началу диапозона
+ # определяю что делитель из цикла будет равно началу диапозона
 
-while currentnumber >= stard and currentnumber <= finishd: # делимое должно быть равно началу диапозона и не быть больше его конца
-    currentnumber = currentnumber + 1
-    while delitel >= stard and delitel <= math.sqrt(currentnumber): # делитель должен быть равен началу диапозон и не превашать корень делимого
-        delitel = delitel + 1
-    if currentnumber % delitel == 0: # если результат деления имеет нулевой остаток, значит число не является простым, и выаодить мы его не будем
+while currentnumber  < finishd: # делимое должно быть равно началу диапозона и не быть больше его конца
+    delitel = currentnumber
+    while delitel <= math.sqrt(currentnumber): # делитель должен быть равен началу диапозон и не превашать корень делимого
+        
+        
+        if currentnumber % delitel == 0: # если результат деления имеет нулевой остаток, значит число не является простым, и выdодить мы его не будем цикл прервем
             continue
-            
-    print(currentnumber)
+        print(currentnumber)
+        delitel = delitel + 1
+    currentnumber = currentnumber + 1
+    
+    
+# разобраться как работает break 
+
+# осознано написать 2 программы по выводу js and python
