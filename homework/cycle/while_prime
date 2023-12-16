@@ -1,0 +1,12 @@
+number_for_check = int(input())
+
+
+prime = True
+
+for deliter in range(2, number_for_check):
+    if number_for_check % deliter == 0:
+        prime == False
+        print("Число составное")
+        break
+if prime == True:
+    print("Число простоe")
