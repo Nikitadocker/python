@@ -13,11 +13,17 @@
 #     else:
 #         print ("Число {} cоставное ".format(number_for_check))
 
-
+import sys
 
 start_range = int(input())
 
 finish_range = int(input())
+
+if start_range < 0 or finish_range < 0:
+    sys.exit("Числа для проверки должны быть больше 0")
+else: 
+    start_range = int(start_range)  
+    finish_range = int (finish_range)
 
 number_for_check = start_range
 
