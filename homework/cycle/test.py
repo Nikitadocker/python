@@ -15,15 +15,26 @@
 
 import sys
 
-start_range = int(input())
+start_range = input()
 
-finish_range = int(input())
+finish_range = input()
+
+if start_range == "пять":
+
+    start_range = 5
+else:
+    start_range = int(start_range)
+
+if finish_range == "пять":
+    finish_range = 5
+else:
+    finish_range = int(finish_range)
 
 if start_range < 0 or finish_range < 0:
     sys.exit("Числа для проверки должны быть больше 0")
-else: 
-    start_range = int(start_range)  
-    finish_range = int (finish_range)
+else:
+    start_range = int(start_range)
+    finish_range = int(finish_range)
 
 number_for_check = start_range
 
@@ -36,8 +47,7 @@ while number_for_check < finish_range:
             break
         divisor += 1
     if prime:
-        print ("Число {} простым ".format(number_for_check))
+        print("Число {} простым ".format(number_for_check))
     else:
-        print ("Число {} cоставное ".format(number_for_check))
+        print("Число {} cоставное ".format(number_for_check))
     number_for_check += 1
-    
