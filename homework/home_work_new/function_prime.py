@@ -1,19 +1,17 @@
 import sys
-def check_prime (number):
-    if number < 0:
-       return sys.exit('Число должно быть положительным!')
-    if number > 1:
-       prime = True
-       for divider in range(2, number):
-           if number % divider == 0:
-               prime = False
-               break
-       if prime:
-           return print ('Число является простым')
-       else:
-           return print ('Число является составным')
+from check_def import check_prime
        
 
-number = int(input())
 
-check_prime(number)
+
+start_number = int(input())
+finish_number = int(input())
+
+if start_number < 0 or finish_number < 0:
+    sys.exit ("Числа для проверки должны быть положительными")
+
+for number_for_check in range(start_number, finish_number + 1):
+    if check_prime(number_for_check):
+        print ("Число {}простое".format(number_for_check))
+    else:
+        print ("Число {} cоставное".format(number_for_check))
