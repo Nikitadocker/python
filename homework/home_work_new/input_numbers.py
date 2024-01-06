@@ -28,22 +28,7 @@ for number_for_check in order:
     elif number_for_check == 0:
          zero_numbers +=1
         
-        
-        
-       
-        # count_negative_numbers = order.count(True) 
-        # negative_numbers = []
-        # negative_numbers.append(number_for_check)
-        # len(negative_numbers)
-        # sum (int(negative_numbers))
 print('Количество отрицательныx чисел', negative_numbers)
 print('Количество положительных чисел', positive_numbers)
 print('Количество нулей', zero_numbers)
         
-    # if number_for_check > 0:
-    #     positive_numbers = True
-    #     print('Число пожительное')
-    # if number_for_check == 0:
-    #     zero_numbers = True
-    #     print('Число равно 0')
-    
