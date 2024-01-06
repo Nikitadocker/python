@@ -16,6 +16,7 @@ except ValueError:
     print('Начало диапозона должно быть меньше ,чем конец диапозона')
 except SyntaxError:
     print('Ноль не может быть простым числом')
+    sys.exit
 
     
 
