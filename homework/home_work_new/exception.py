@@ -1,24 +1,8 @@
 import sys
 from check_def import check_prime
-       
+from def_check_input import check_input
 
-
-try:
-    
-    start_number = int(input())
-    finish_number = int(input())
-    if start_number > finish_number:
-        raise ValueError 
-    if start_number == 0 or finish_number == 0:
-        raise SyntaxError
-
-except ValueError:
-    print('Начало диапозона должно быть меньше ,чем конец диапозона')
-except SyntaxError:
-    print('Ноль не может быть простым числом')
-    sys.exit
-
-    
+start_number, finish_number = check_input()
 
 if start_number < 0 or finish_number < 0:
     sys.exit ("Числа для проверки должны быть положительными")
