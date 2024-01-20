@@ -12,15 +12,23 @@ print("Введите N")
 
 N = int(input())
 
-numbers =  input('Введите числа через пробел')
-
-order = list(map(int,numbers.split()))
-
 negative_numbers = 0
 positive_numbers = 0
 zero_numbers = 0
 
-for number_for_check in order:
+for _ in range(N):
+    number = input()
+    if number < 0:
+        negative_numbers +1
+    elif number > 0:
+        
+        
+    
+
+
+
+
+for number_for_check in :
     if number_for_check < 0:
        negative_numbers +=1
     elif number_for_check > 0:
