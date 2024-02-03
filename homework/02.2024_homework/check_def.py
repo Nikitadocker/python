@@ -1,5 +1,4 @@
-# start_number = int(input())
-# finish_number = int(input())
+
 
 
 def check_prime (start_number, finish_number):
@@ -16,4 +15,4 @@ def check_prime (start_number, finish_number):
     
     
     
-check_prime(3, 10)
+# check_prime(3, 10)
