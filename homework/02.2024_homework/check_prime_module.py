@@ -1,6 +1,3 @@
-
-
-
 def check_prime (start_number, finish_number):
     for number_for_check in range (start_number, finish_number +1):
         prime = True
