@@ -15,4 +15,4 @@ def check_prime (start_number, finish_number):
     
     
     
-# check_prime(3, 10)
+
