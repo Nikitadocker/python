@@ -6,9 +6,6 @@ def check_input(start_number, finish_number):
     elif start_number >= finish_number:  
         print(' Начало диапозона не должно быть больше или равно концу диапозона. Повторите ввод ')
         return False
-    # elif start_number > finish_number:
-    #     print('Начало диапозона не должно быть чем конец диапзона Повторите ввод')
-    #     return False
     else: 
         return True
 
