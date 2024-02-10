@@ -1,7 +1,0 @@
-name = input("Как Вас зовут? ")
-print ("Привет,", name) # почему такой странный синтаксис в print? имею ввиду запятые
-
-
-
-
-Обсудить скрипты  show_number.py и if_first.py и сheck_diapozon
