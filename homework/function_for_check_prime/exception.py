@@ -1,6 +1,6 @@
 import sys
 from check_def import check_prime
-from def_check_input import check_input
+from homework.function_for_check_prime.def_check_input import check_input
 
 start_number, finish_number = check_input()
 
