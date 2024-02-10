@@ -1,0 +1,20 @@
+capture_output - захват вывода stdout и stderr
+
+text - текстовый режим для stdin, stdout и stderr
+
+ps aux --no--headers выводим список процессов без имен столбцов
+
+
+pids = []
+
+result = {}
+
+А есть какая то логика в том что мы сначала использовали список а потом словарь?
+
+result.stdout.splitlines() разделяем список на строки
+
+
+fields = line.split()
+
+
+pids.append(int(pid))  добавляем пид в список
