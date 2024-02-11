@@ -17,6 +17,7 @@ for line in result.stdout.splitlines():
 result = {}
 
 for pid_for_check in pids:
+    result[pid_for_check]='Prime'
     deviders = range(2, int(math.sqrt(pid_for_check) + 1))                             
     for current_devider in deviders:
         if pid_for_check % current_devider == 0:
@@ -26,7 +27,7 @@ for pid_for_check in pids:
             result[pid_for_check]='Prime'
 
 
-with open ('output.json', 'w', encoding='utf-8') as file:
+with open ('output.json', 'w') as file:
     json.dump(result, file)
     
-    #  for i in range(2, int(math.sqrt(n) + 1)):
+    
