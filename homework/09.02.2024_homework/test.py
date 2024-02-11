@@ -5,14 +5,24 @@ import math
 result = subprocess.run(['ps', 'aux', '--no-headers'], capture_output=True, text=True)
 
 pids = []
+name_pids = []
 
 for line in result.stdout.splitlines():
     # Разделить строку по пробелам
     fields = line.split()
     # Извлечь PID из второго столбца
     pid = fields[1]
+    # # Извлечь NAME PID из десятого столбца
+    name_pid = fields[10]
+
     # Добавить PID в список
     pids.append(int(pid))
+    
+    # Добавить NAME PID в список
+    name_pids.append(name_pid)
+    
+
+
 
 result = {}
 
