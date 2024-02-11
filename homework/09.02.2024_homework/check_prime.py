@@ -17,7 +17,7 @@ for line in result.stdout.splitlines():
 result = {}
 
 for pid_for_check in pids:
-    deviders = range(2, pid_for_check)
+    deviders = range(2, int(math.sqrt(pid_for_check) + 1))                             
     for current_devider in deviders:
         if pid_for_check % current_devider == 0:
             result[pid_for_check]='Composite'
@@ -28,3 +28,5 @@ for pid_for_check in pids:
 
 with open ('output.json', 'w', encoding='utf-8') as file:
     json.dump(result, file)
+    
+    #  for i in range(2, int(math.sqrt(n) + 1)):
