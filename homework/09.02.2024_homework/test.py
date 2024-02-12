@@ -40,4 +40,10 @@ for pid_for_check in pids:
 with open ('output.json', 'w') as file:
     json.dump(result, file)
     
+result_name_pids = {}
+
+for name in name_pids:
+    result_name_pids[name]='name_process'
     
+with open ('output_name.json', 'w') as file_name:
+    json.dump(result_name_pids, file_name)
