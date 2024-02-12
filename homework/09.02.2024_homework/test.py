@@ -47,3 +47,27 @@ for name in name_pids:
     
 with open ('output_name.json', 'w') as file_name:
     json.dump(result_name_pids, file_name)
+    
+    
+# попробуем обьединить json файлы в один
+
+with open ('output.json', 'r') as file_pids_read:
+    
+    data1 = json.load(file_pids_read)
+
+with open ('output_name.json', 'r') as file_pids_name_read:
+    
+    data2 = json.load(file_pids_name_read)
+    
+# обьединение словарей
+
+final_data ={}
+
+
+final_data.update(data2)
+final_data.update(data1)
+
+#cохраняем обьединеный словарь
+
+with open ('final.json', 'w') as file_write:
+    json.dump(final_data, file_write)
