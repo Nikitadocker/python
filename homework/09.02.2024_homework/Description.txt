@@ -31,3 +31,14 @@ pids.append(int(pid))  добавляем пид в список
 2. Парсим эти данные, получаем отдельный список с именами процесса и отдельный список с номерами процесса
 3. добавляем ключ "pid_number" к номерам pid.  добавляем ключ к "pid_name"
 4. Выводим результат на экран, (или же в jsob файл)
+
+
+https://pythonru.com/uroki/funkcija-zip-dlja-nachinajushhih про функцию zip
+
+
+Конечный результат:
+
+[{"pid_number": 1},{"Prime or Composite:"Prime"},{"pid_name": "cron"}, {"pid_number": 2},{"Prime or Composite:"Prime"}, {"pid_name": "gnome"}]
+
+Файл формата json . В нем список ,в который включено 3 словаря
+в
