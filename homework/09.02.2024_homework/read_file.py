@@ -1,2 +1,2 @@
 import json
-from 
+from dictionary import check_prime
