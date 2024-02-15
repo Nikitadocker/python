@@ -1,11 +1,11 @@
 import json
-from dictionary import check_prime
+from check_prime import check_prime
 
-with open ('output_pids.json', 'r') as file_read:
+with open ('output_pids.json', 'r+') as file:
 
-    file_check = json.load(file_read)  # <class 'list'>
+    file_check = json.load(file)  # <class 'list'>
     
-    # print(type(file_check))
+   
 
 
 for key in file_check:
@@ -15,10 +15,10 @@ for key in file_check:
     
     result_after_check = check_prime (int(pid_for_check))
     
-    if result_after_check == "Prime":
-        prime_or_composite == "Prime"
-    elif result_after_check == "Composite":
-            prime_or_composite == "Composite"
+    if result_after_check == "Prime" and prime_or_composite == "Prime":
+        print("Простые числа проверены. Все хорошо")
+    elif result_after_check == "Composite" and prime_or_composite == "Composite":
+            print("Cоставные числа проверены. Все хорошо")
     elif prime_or_composite == "Not Prime and Composite":
         print("Цифра 1 является уникальной. Это не ошибка")
         
