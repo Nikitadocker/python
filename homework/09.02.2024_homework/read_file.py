@@ -1,7 +1,7 @@
 import json
 from dictionary import check_prime
 
-with open ('output_pids.json') as file_read:
+with open ('output_pids.json', 'r') as file_read:
 
     file_check = json.load(file_read)  # <class 'list'>
     
@@ -25,7 +25,5 @@ for key in file_check:
     else:
         print("Найдена ошибка. Число должно быть Простым")
     
-    # print(pid_for_check)
-    # print(prime_or_composite)
-    # print (result_after_check)
+   
     
