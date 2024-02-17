@@ -16,11 +16,10 @@ for key in file_check:
     result_after_check = check_prime (int(pid_for_check))
     
     if result_after_check == "Prime" and prime_or_composite != "Prime":
-        print("Число, {} проверено. Найдена ошибка. Число должно быть простым".format(pid_for_check))
+        print("Число, {0} проверено. Найдена ошибка. Значениe в файле {1}, а число должно быть простым".format(pid_for_check,prime_or_composite))
     elif result_after_check == "Composite" and prime_or_composite != "Composite":
         print("Число, {} проверено. Найдена ошибка. Число должно быть составным".format(pid_for_check))
-    elif prime_or_composite == "Not Prime and Composite":
-        print("Цифра 1 является уникальной. Это не ошибка")
+
         
     
     
