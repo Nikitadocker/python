@@ -1,27 +1,29 @@
 import json
 from check_prime import check_prime
 
+pupa = "Composite"
+math_eng_ru_translation = {pupa: "составное", "Prime": "простое"}
+
 with open("output_pids.json", "r+") as file:
 
     file_check = json.load(file)  # <class 'list'>
 
 
 for key in file_check:
-    prime_or_composite = key["Prime or Composite"]
+    result_before_check = key["Prime or Composite"]
 
-    pid_for_check = key["pid_number"]
+    process_id = key["pid_number"]
 
-    result_after_check = check_prime(int(pid_for_check))
+    result_after_check = check_prime(int(process_id))
 
-    if result_after_check == "Prime" and prime_or_composite != "Prime":
+    process_name = key["pid_name"]
+
+    if result_before_check != result_after_check:
         print(
-            "Число, {0} проверено. Найдена ошибка. Значениe в файле {1}, а число должно быть простым".format(
-                pid_for_check, prime_or_composite
-            )
-        )
-    elif result_after_check == "Composite" and prime_or_composite != "Composite":
-        print(
-            "Число, {0} проверено. Найдена ошибка. Значение в файле {1}, а число должно быть составным".format(
-                pid_for_check, prime_or_composite
+            "Pid процесса с именем {0} проверен. Найдена ошибка. Число {1} на самом деле являеться {2}, а в файле написано {3}".format(
+                process_name,
+                process_id,
+                math_eng_ru_translation[result_after_check],
+                math_eng_ru_translation[result_before_check],
             )
         )
