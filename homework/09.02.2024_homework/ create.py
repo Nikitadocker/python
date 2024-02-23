@@ -37,8 +37,8 @@ for line in result.stdout.splitlines():
 
     pids = {}
 
-    pids["process_id"] = int(pid)
-    pids["process_name"] = name_pid
+    pids["Process Number"] = int(pid)
+    pids["Processs Name"] = name_pid
     result_check = check_prime(int(pid))
     pids["Prime or Composite"] = result_check
 

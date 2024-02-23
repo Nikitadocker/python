@@ -18,9 +18,7 @@ with open("output_pids.json", "r+") as file:
     file_check = json.load(file)  # <class 'list'>
     
 
-# if "Not Prime and Composite" not in file_check:
-#         print("Ключ 'Not Prime and Composite' отсутствует в файле output_pids.json.")
-#         exit()
+
 
 
 for key in file_check:
@@ -32,7 +30,10 @@ for key in file_check:
 
     process_name = key["Processs Name"]
     
- 
+    if "Not Prime and Composite" not in file_check:
+        print("Ключ 'Not Prime and Composite' отсутствует в файле output_pids.json.")
+        exit()
+
 
     if result_before_check != result_after_check:
         print(
