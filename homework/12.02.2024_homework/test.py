@@ -21,6 +21,8 @@ math_eng_ru_translation = {
 }
 
 
+
+
 with open("output_pids.json", "r+") as file:
 
     file_check = json.load(file)  # <class 'list'>
@@ -34,26 +36,39 @@ for key in file_check:
     result_after_check = check_prime(int(process_id))
 
     process_name = key["Processs Name"]
+    
+    result_before_check_is_composite = key["Is Composite"]
+    
+    result_after_check_is_composite = check_prime(int(process_id))
 
     if result_after_check == "Prime":
 
         result_after_check = True
     else:
         result_after_check = False
+        
+        
+    if result_after_check_is_composite == "Composite":
+        
+        result_after_check_is_composite = True
+        
+    else:
+        result_after_check_is_composite = False
+    
 
-    # print(result_before_check)
+    print(result_after_check_is_composite)
 
     # print(result_after_check)
 
-    if result_before_check != result_after_check:
-        print(
-            "Pid процесс с именем {0} проверен. Найдена ошибка. Число {1} на самом деле {2}, а в файле написано {3}".format(
-                process_name,
-                process_id,
-                math_eng_ru_translation[result_after_check],
-                math_eng_ru_translation[result_before_check],
-            )
-        )
+    # if result_before_check != result_after_check:
+    #     print(
+    #         "Pid процесс с именем {0} проверен. Найдена ошибка. Число {1} на самом деле {2}, а в файле написано {3}".format(
+    #             process_name,
+    #             process_id,
+    #             math_eng_ru_translation[result_after_check],
+    #             math_eng_ru_translation[result_before_check],
+    #         )
+    #     )
 
     # if result_before_check != result_after_check:
     #     print(
