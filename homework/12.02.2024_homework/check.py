@@ -19,7 +19,7 @@ with open("output_pids.json", "r+") as file:
 
 
 for key in file_check:
-    result_before_check = key["Prime or Composite"]
+    result_before_check = key["Is Prime"]
 
     process_id = key["Process Number"]
 
