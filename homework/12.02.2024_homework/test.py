@@ -17,13 +17,11 @@ from check_prime import check_prime
 math_eng_ru_translation = {
     False: "Cоставное",
     True: "Простое",
-    "Not Prime and Composite": "Ни Простым, ни Составным",
 }
 
 math_eng_ru_translation_is_composite = {
     True: "Cоставное",
     False: "Простое",
-    "Not Prime and Composite": "Ни Простым, ни Составным",
 }
 
 
@@ -77,6 +75,12 @@ for key in file_check:
                 math_eng_ru_translation_is_composite[result_before_check_is_composite].lower(),
             )
         )
+        
+        
+    
+        
+        
+        
 
     # if result_before_check != result_after_check:
     #     print(
