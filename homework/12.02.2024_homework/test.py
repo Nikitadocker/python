@@ -7,11 +7,6 @@ from check_prime import check_prime
 #     "Not Prime and Composite": "not prime and composite",
 # }
 
-# math_eng_ru_translation = {
-#     "Composite": "Cоставное",
-#     "Prime": "Простое",
-#     "Not Prime and Composite": "Ни Простым, ни Составным",
-# }
 
 
 math_eng_ru_translation = {
@@ -82,12 +77,4 @@ for key in file_check:
         
         
 
-    # if result_before_check != result_after_check:
-    #     print(
-    #         "Pid процесса с именем {0} проверен. Найдена ошибка. Число {1} на самом деле {2}, а в файле написано {3}".format(
-    #             process_name,
-    #             process_id,
-    #             math_eng_ru_translation[result_after_check].lower(),
-    #             math_eng_ru_translation[result_before_check].lower(),
-    #         )
-    #     )
+  
